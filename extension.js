@@ -191,7 +191,7 @@ var controlMenu = GObject.registerClass({
             fan: 'fan-symbolic.svg',
             speed: 'speed-gauge.svg',
             mode: 'preferences-color-symbolic.svg',
-            panel: 'panel-logo.svg'
+            panel: 'input-gaming-symbolic.svg'
         }
         this.FAN_MODES = ['Balanced', 'Turbo', 'Silent'];
         this.ANIMATION_MODES = ['Static color', 'Breathing', 'Color cycle', 'Strobe'];
