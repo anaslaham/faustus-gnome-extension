@@ -1,12 +1,13 @@
 {
   "name": "Faustus Tuf Controls",
   "description": "This extension provides an easy and convenient way to change settings for your Asus tuf laptop in the GNOME desktop environment based on the open source driver faustus for Tuf gaming laptops",
-  "uuid": "faustus-tuf",
+  "uuid": "faustus-tuf@anas",
   "shell-version": [
     "40",
     "41",
     "42",
     "43"
   ],
-  "version": 1
+  "version": 1,
+  "url": "https://github.com/anaslaham/faustus-gnome-extension"
 }
