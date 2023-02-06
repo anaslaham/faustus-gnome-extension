@@ -111,7 +111,7 @@ class Faustus {
     }
     //Save the results
     save() {
-        Util.trySpawnCommandLine(`${this.pkexec_path} ${Me.path}/set_rgb.sh ${this.COLORS.map(c => Utils.decimalToHex(this.color[c])).join(' ')} ${this.animationMode} ${this.animationSpeed} ${this.fanMode}`);
+        Util.trySpawnCommandLine(`${this.pkexec_path} /bin/bash -c "echo ${Utils.decimalToHex(this.color.red)} > /sys/devices/platform/faustus/kbbl/kbbl_red && echo ${Utils.decimalToHex(this.color.green)} > /sys/devices/platform/faustus/kbbl/kbbl_green && echo ${Utils.decimalToHex(this.color.blue)} > /sys/devices/platform/faustus/kbbl/kbbl_blue && echo ${this.animationMode} > /sys/devices/platform/faustus/kbbl/kbbl_mode && echo ${this.animationSpeed} > /sys/devices/platform/faustus/kbbl/kbbl_speed && echo ${this.fanMode} > /sys/devices/platform/faustus/throttle_thermal_policy && echo 2a > /sys/devices/platform/faustus/kbbl/kbbl_flags && echo 1 > /sys/devices/platform/faustus/kbbl/kbbl_set"`);
     }
 }
 
