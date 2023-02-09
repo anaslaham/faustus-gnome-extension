@@ -260,10 +260,6 @@ var controlMenu = GObject.registerClass({
 let menu;
 
 class Extension {
-    constructor() {
-        this._indicator = null;
-    }
-
     enable() {
         menu = new controlMenu();
         Main.panel.addToStatusArea('indicator', menu);
@@ -271,6 +267,7 @@ class Extension {
 
     disable() {
         menu.destroy();
+        menu = null;
     }
 }
 
