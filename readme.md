@@ -1,5 +1,6 @@
 # GNOME Extension: Faustus Asus Tuf Controls
 
+![faustus-screenshot](https://github.com/anaslaham/faustus-gnome-extension/blob/master/faustus-screenshot.png?raw=true)
 This extension provides an easy and convenient way to change settings for your tuf laptop in the GNOME desktop environment based on the open source driver [faustus](https://github.com/hackbnw/faustus) for Tuf gaming laptops.
 
 ## Features
